@@ -1,0 +1,157 @@
+/*CSS Reset*/	
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: 'Barlow', sans-serif;
+		}
+
+		.clear:after {
+			content: "";
+			display: block;
+			clear:	both;
+		}
+
+		.header {
+			background-color: #81A594;
+			height: 20%;
+		}
+
+		.logoImage {
+			
+			width: 100px;
+			height: 100px;
+			border-radius: 300px;
+		}
+
+		.logo {
+			margin: 15px;
+			text-align: center;
+		}
+
+
+		.nav > ul > li {
+			list-style: none;
+			display: inline-block;
+			}
+
+		.nav > ul > li > a {
+			color:  #E6E6DC;
+			padding: 2px;
+			}
+
+
+		.nav > ul > li > a:hover{
+		    background-color: #E6E6DC;
+		    color: #00628B;
+		    text-decoration: none;
+		}
+
+		.nav {
+			text-align: center;
+		}
+
+
+		/*Main*/
+
+		main {
+			height: 60%;
+			width: 100%;
+			background-color: lightgrey;
+		}
+
+		.container {
+			background-color: #E6E6DC;
+			width: 95%;
+			color: #00628B;
+
+		}
+
+		.paragraph > p {
+			text-align: justify;
+		}
+
+		h3 {
+			background-color: lightgrey;
+		}
+	
+		#back {
+			background-color:  #00628B;
+			color: #E6E6DC; 
+			font-size: 0.8em;	
+			margin-top: 20px;		
+		}
+
+		#button {
+			text-align: center;
+		}
+
+		/*Home*/
+
+		.image {
+			width: 100%;
+			height: 200px;
+		}
+
+		/*Services*/
+
+		.services {
+	      margin-left: 20px;
+	    }
+
+	    .services > ul > li {
+	      color: #81A594;
+	    }
+
+
+		.categoryImage > .image {
+		 width:450px;
+		 height:230px;
+		 margin: 10px auto;
+		}
+
+	    /*Contact*/
+	    .btn {
+			margin-bottom: 15px;
+		}
+
+		/*Gallery*/
+
+		.carousel-inner > .item > img {
+		  width:500px;
+		  height:230px;
+		  margin: 0 auto;
+		}
+
+		/*Footer*/
+
+		footer {
+			background-color: #00628B;
+			height: 20%;
+			width: 100%;
+		}
+
+		.list-inline-item > a {
+			color: #E6E6DC;
+			font-size: 2em;
+		}
+
+		.footer1,
+		.footer2 {
+			width: 50%;
+			display: inline-block;
+			font-size: 0.8em;
+			color: #E6E6DC;
+		}
+
+		.footer1 {
+			float: left;
+			margin-top: 20px;
+			}
+
+		.footer2 {
+			float: right;
+			margin-top: 20px;
+
+		}
+
