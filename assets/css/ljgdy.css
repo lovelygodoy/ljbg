@@ -3,7 +3,6 @@ body, html {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   color: rgba(5, 5, 51, 0.7);
-  box-sizing:border-box;
 }
 
 a {
@@ -20,6 +19,82 @@ a:hover {
   text-align: center;
   font-size: 36px;
   color: #050533;
+}
+
+#bg-load {
+  background-color: #050533;
+  width: 100%;
+  height: 60%;
+  margin: 0;
+  position: relative;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+#bg-load h2 {
+  color: #F3E3E2;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  width: 65%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 25%;
+  z-index: 1;
+  width: 150;
+  height: 150px;
+  margin: -60px 0 0 -60px;
+  border: 10px solid #F2F1E8;
+  border-radius: 50%;
+  border-top: 10px solid #F2F1E8;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+  background-image: url("../img/avatar.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+#main {
+  display: none;
 }
 
 #myBtn {
@@ -43,24 +118,23 @@ a:hover {
   color: #E34234;
 }
 
+/* intro */
+
 #intro {
     background-color: #050533;
-    height: 70%;
 }
 
 .bg-text {
-  background-color: transparent;
   font-weight: bold;
-  border: 3px solid #F3E3E2;
-  position: absolute;
-  top: 35%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  width: 65%;
+  position: relative;
   padding: 20px;
   text-align: center;
   color: #F3E3E2;
+  margin: 0 auto;
+}
+
+.bg-text h1 {
+  text-transform: uppercase;
 }
 
 .bg-text .avatar {
@@ -78,6 +152,8 @@ a:hover {
   color: #E34234;
   background-color:#F2F1E8;
 }
+
+/* work experiences */
 
 #experience {
   background-color:#FFFFFF;
@@ -145,32 +221,7 @@ a:hover {
   color: rgba(5, 5, 51, 0.6);
 }
 
-@media screen and (max-width: 600px) {
-  .timeline::after {
-    left: 31px;
-  }
-
-  .right::after {
-    left: 16px;
-  }
-
-  .timeline .container {
-    width: 100%;
-    padding-left: 70px;
-    padding-right: 25px;
-  }
-
-  .timeline .container::before {
-    left: 60px;
-    border: medium solid white;
-    border-width: 10px 10px 10px 0;
-    border-color: transparent white transparent transparent;
-  }
-
-  .right {
-    left: 0%;
-  }
-}
+/* portfolio */
 
 #work {
   background-color: #E34234;
@@ -181,6 +232,10 @@ a:hover {
   color: #FFFFFF;
 }
   
+html {
+  box-sizing: border-box;
+}
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
@@ -203,20 +258,34 @@ a:hover {
 }
 
 .card .container {
-  padding: 0 15px;
+  padding: 15px;
 }
+
 .card .container h2 {
   color: #E34234;
   letter-spacing: -0.5px;
 }
+
 .card .container::after, .row::after {
   content: "";
   clear: both;
   display: table;
 }
 
+.card {
+  transition: transform .2s;
+}
+
+.card:hover {
+  transform: scale(1.10);
+}
+
 .title {
   color:#050533;
+}
+
+.view-btn {
+  text-align: center;
 }
 
 .button {
@@ -228,7 +297,7 @@ a:hover {
   background-color: #E34234;
   text-align: center;
   cursor: pointer;
-  width: 100%;
+  width: 175px;
 }
 
 .button:hover {
@@ -236,22 +305,7 @@ a:hover {
   color: #FFFFFF;
 }
 
-
-@media screen and (max-width: 1024px) {
-  .column {
-    width: 50%;
-    display: block;
-      padding: 20px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .column {
-    width: 100%;
-    display: block;
-      padding: 15px;
-  }
-}
+/* contact and skillset */
 
 #contact {
   padding: 30px;
@@ -275,14 +329,6 @@ a:hover {
   list-style-type: circle;
 }
 
-.footer {
-  padding: 10px;
-  width: 100%;
-  background-color: #050533;
-  text-align: center;
-  margin: 0 auto;
-  color: #F3E3E2;
-}
 .socialmedia.fab {
   padding: 20px;
   font-size: 18px;
@@ -317,17 +363,75 @@ a:hover {
   color: white;
 }
 
+/* footer */
+
+.footer {
+  padding: 10px;
+  width: 100%;
+  background-color: #050533;
+  text-align: center;
+  margin: 0 auto;
+  color: #F3E3E2;
+}
+
+@media screen and (max-width: 1024px) {
+  .column {
+    width: 50%;
+    display: block;
+      padding: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .column {
+    width: 100%;
+    display: block;
+    padding: 15px;
+  }
+}
+
 @media screen and (max-width: 600px) {
+  .h2-title {
+    font-size: 26px;
+  }
+
   #contact .column {
       width: 100%;
       max-width: 100%;
   }
+
   #contact {
     text-align: center;
   }
+
   #contact ul {
     text-align: left;
     list-style-type: circle;
+  }
+
+  .timeline::after {
+    left: 31px;
+  }
+
+  .right::after {
+    left: 16px;
+  }
+
+  .timeline .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+  .timeline .container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+  .right {
+    left: 0%;
   }
 }
 
@@ -335,7 +439,10 @@ a:hover {
   .bg-text {
     border: none;
   }
+
   #contact {
       padding: 15px 0;
   }
 }
+
+

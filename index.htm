@@ -10,131 +10,137 @@
     <link href="fontawesome/css/brands.css" rel="stylesheet">
     <link href="fontawesome/css/solid.css" rel="stylesheet">
 </head>
-<body>
+<body onload="myFunction()">
 
-    <button onclick="topFunction()" id="myBtn" title="Back to top"><i class="fa fa-arrow-up fa-lg"></i></button>
+    <div id="bg-load">
+        <h2>Lovely Joy Godoy</h2>
+        <div id="loader"></div> 
+    </div>    
+    <div style="display:none;" id="main" class="animate-bottom">
+        <button onclick="topFunction()" id="myBtn" title="Back to top"><i class="fa fa-arrow-up fa-lg"></i></button>
+        <div class="bg" id="intro">
+            <div class="bg-text">
+                <img src="assets/img/avatar.png" alt="Avatar" class="avatar">
+                <h1>Lovely Joy Godoy</h1>
+                <p>Web Developer</p>
+                <a class="button" href="#work">Know More</a>
+            </div>
+        </div>
 
-    <div class="bg" id="intro"></div>
-    <div class="bg-text">
-        <img src="assets/img/avatar.png" alt="Avatar" class="avatar">
-        <h1>Lovely Joy Godoy</h1>
-        <p>Web Developer</p>
-        <a class="button" href="#work">Know More</a>
-    </div>
-
-    <div class="bg" id="experience">
-        <br>
-        <h2 class="h2-title">Work Experiences / Certifications</h2>
-        <div class="timeline">
-            <div class="container right">
-                <div class="content">
-                    <h3>Junior Web Developer &mdash; Designblue Philippines, Inc.</h3>
-                    <p>Makati City <br> March 2020 &ndash; August 2020</p>
+        <div class="bg" id="experience">
+            <br>
+            <h2 class="h2-title">Work Experiences / Certifications</h2>
+            <div class="timeline">
+                <div class="container right">
+                    <div class="content">
+                        <h3>Junior Web Developer &mdash; Designblue Philippines, Inc.</h3>
+                        <p>Makati City <br> March 2020 &ndash; August 2020</p>
+                    </div>
                 </div>
-            </div>
-            <div class="container right">
-                <div class="content">
-                    <h3>Junior System Engineer &mdash; Afield Consulting Inc.</h3>
-                    <p>Makati City <br> May 2018 &ndash; February 2020</p> 
+                <div class="container right">
+                    <div class="content">
+                        <h3>Junior System Engineer &mdash; Afield Consulting Inc.</h3>
+                        <p>Makati City <br> May 2018 &ndash; February 2020</p> 
+                    </div>
                 </div>
-            </div>
-            <div class="container right">
-                <div class="content">
-                    <h3>Real Estate Admin Staff &mdash; AUN Philippines Inc.</h3>
-                    <p>Makati City <br> July 2015 &ndash; November 2017</p>    
+                <div class="container right">
+                    <div class="content">
+                        <h3>Real Estate Admin Staff &mdash; AUN Philippines Inc.</h3>
+                        <p>Makati City <br> July 2015 &ndash; November 2017</p>    
+                    </div>
                 </div>
-            </div>
-            <div class="container right">
-                <div class="content">
-                    <h3>WORDPRESS FOR BEGINNERS: CREATE YOUR OWN WORDPRESS WEBSITE</h3>
-                    <p>Udemy 2018</p>                
+                <div class="container right">
+                    <div class="content">
+                        <h3>WORDPRESS FOR BEGINNERS: CREATE YOUR OWN WORDPRESS WEBSITE</h3>
+                        <p>Udemy 2018</p>                
+                    </div>
                 </div>
-            </div>
-            <div class="container right">
-                <div class="content">
-                    <h3>Tuitt Coding Bootcamp &mdash; Tuitt Philippines Incorporated</h3>
-                    <p>Quezon City <br> November 2017 &ndash; March 2018</p> 
-                </div>
-            </div>
-          </div>
-    </div>
-
-    <div class="bg" id="work">
-        <br>
-        <h2 class="h2-title">My Works</h2>
-        <div class="row">
-            <div class="column">
-                <div class="card">
-                <img src="assets/img/thumbnail.png" alt="Jane" style="width:100%">
-                <div class="container">
-                    <h2>L|R Designs &amp; Printing</h2>
-                    <p class="title">A static HTML website developed using CSS and Bootstrap.</p><br>
-                    <p><a class="button" target="_blank" href="#">View Website</a></p>
-                </div>
-                </div>
-            </div>
-            
-            <div class="column">
-                <div class="card">
-                <img src="assets/img/thumbnail.png" alt="Mike" style="width:100%">
-                <div class="container">
-                    <h2>FantastiKa</h2>
-                    <p class="title">An E-commerce website developed using PHP and MySql.</p><br>
-                    <p><a class="button" target="_blank" href="#">View Website</a></p>
-                </div>
-                </div>
-            </div>
-            
-            <div class="column">
-                <div class="card">
-                <img src="assets/img/thumbnail.png" alt="John" style="width:100%">
-                <div class="container">
-                    <h2>You Are Blessed</h2>
-                    <p class="title">An inspirational blogsite developed using PHP Laravel Framework.</p><br>
-                    <p><a class="button" target="_blank" href="#">View Website</a></p>
-                </div>
-                </div>
-            </div>
-            <div class="column">
-                <div class="card">
-                    <img src="assets/img/thumbnail.png" alt="John" style="width:100%">
-                    <div class="container">
-                    <h2>Website Template</h2>
-                    <p class="title">Website Template developed using Wordpress CMS Platform</p><br>
-                    <p><a class="button" target="_blank" href="#">View Website</a></p>
+                <div class="container right">
+                    <div class="content">
+                        <h3>Tuitt Coding Bootcamp &mdash; Tuitt Philippines Incorporated</h3>
+                        <p>Quezon City <br> November 2017 &ndash; March 2018</p> 
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="bg" id="contact">
-        <div class="row">
-            <div class="column">
-            <h2>CONNECT WITH ME &#x3A;</h2>
-            <p><i class="fas fa-phone"></i><a href="tel:+639564277198"> +639564277198</a></p>
-            <p><i class="fas fa-envelope"></i><a href="mailto:bondoc_godoy@yahoo.com"> bondoc_godoy@yahoo.com</a></p>
-            <p><i class="fas fa-eye"></i><a target="_blank" href="assets/docs/ljgodoyresume.pdf" title="see my resume"> my resume</a></p>
-            <a target="_blank" href="https://web.facebook.com/ng1i3t2r0al/" class="socialmedia fab fa-facebook-f"></a>
-            <a target="_blank" href="https://www.linkedin.com/in/lovely-joy-godoy-3ba0b0105/" class="socialmedia fab fa-linkedin-in"></a>
-            <a target="_blank" href="https://github.com/lovelygodoy/" class="socialmedia fab fa-github"></a>
-            </div>
-            <div class="column">
-                <h2>SKILL SET &#x3A;</h2>
-                <ul>
-                    <li>HTML5, CSS3, Bootstrap, Photoshop, Responsive Design</li>
-                    <li>JavaScript, jQuery</li>
-                    <li>PHP, MVC, Codeigniter Framework, Laravel Framework, Wordpress </li>
-                    <li>Converting PSD to HTML code, Visual Studio Code, Sublime Text</li>
-                    <li>cPanel, Git</li>
-                    <li>MySql</li>
-                </ul>
+        <div class="bg" id="work">
+            <br>
+            <h2 class="h2-title">My Works</h2>
+            <div class="row">
+                <div class="column">
+                    <div class="card">
+                    <img src="assets/img/thumbnail.png" alt="Jane" style="width:100%">
+                    <div class="container">
+                        <h2>L|R Designs &amp; Printing</h2>
+                        <p class="title">A static HTML website developed using CSS and Bootstrap.</p><br>
+                        <p class="view-btn"><a class="button" target="_blank" href="#">View Website</a></p>
+                    </div>
+                    </div>
+                </div>
+                
+                <div class="column">
+                    <div class="card">
+                    <img src="assets/img/thumbnail.png" alt="Mike" style="width:100%">
+                    <div class="container">
+                        <h2>FantastiKa</h2>
+                        <p class="title">An E-commerce website developed using PHP and MySql.</p><br>
+                        <p class="view-btn"><a class="button" target="_blank" href="#">View Website</a></p>
+                    </div>
+                    </div>
+                </div>
+                
+                <div class="column">
+                    <div class="card">
+                    <img src="assets/img/thumbnail.png" alt="John" style="width:100%">
+                    <div class="container">
+                        <h2>You Are Blessed</h2>
+                        <p class="title">An inspirational blogsite developed using PHP Laravel Framework.</p><br>
+                        <p class="view-btn"><a class="button" target="_blank" href="#">View Website</a></p>
+                    </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <img src="assets/img/thumbnail.png" alt="John" style="width:100%">
+                        <div class="container">
+                        <h2>Website Template</h2>
+                        <p class="title">Website Template developed using Wordpress CMS Platform</p><br>
+                        <p class="view-btn"><a class="button" target="_blank" href="#">View Website</a></p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="footer">
-        <p>Copyright &copy; 2020 Lovely Joy Godoy</p>
+        <div class="bg" id="contact">
+            <div class="row">
+                <div class="column">
+                <h2>CONNECT WITH ME &#x3A;</h2>
+                <p><i class="fas fa-phone"></i><a href="tel:+639564277198"> +639564277198</a></p>
+                <p><i class="fas fa-envelope"></i><a href="mailto:bondoc_godoy@yahoo.com"> bondoc_godoy@yahoo.com</a></p>
+                <p><i class="fas fa-eye"></i><a target="_blank" href="assets/docs/ljgodoyresume.pdf" title="see my resume"> my resume</a></p>
+                <a target="_blank" href="https://web.facebook.com/ng1i3t2r0al/" class="socialmedia fab fa-facebook-f"></a>
+                <a target="_blank" href="https://www.linkedin.com/in/lovely-joy-godoy-3ba0b0105/" class="socialmedia fab fa-linkedin-in"></a>
+                <a target="_blank" href="https://github.com/lovelygodoy/" class="socialmedia fab fa-github"></a>
+                </div>
+                <div class="column">
+                    <h2>SKILL SET &#x3A;</h2>
+                    <ul>
+                        <li>HTML5, CSS3, Bootstrap, Photoshop, Responsive Design</li>
+                        <li>JavaScript, jQuery</li>
+                        <li>PHP, MVC, Codeigniter Framework, Laravel Framework, Wordpress </li>
+                        <li>Converting PSD to HTML code, Visual Studio Code, Sublime Text</li>
+                        <li>cPanel, Git</li>
+                        <li>MySql</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Copyright &copy; 2020 Lovely Joy Godoy</p>
+        </div>
     </div>
    
     <script rel="nofollow" src="js/ljgdy.js" type="text/javascript" defer language="javascript"></script>
